@@ -3,12 +3,14 @@
         "id": "project1",
         "title": "Project 1",
         "image": "projects/project1/maxresdefault.jpg",
-        "song": "projects/project1/Among the Bells.mp3"
+        "song": "projects/project1/Among the Bells.mp3",
+        "description": "The first project"
     },
     {
         "id": "project2",
         "title": "Project 2",
         "image": "projects/project2/maxresdefault.jpg",
-        "song": "projects/project2/Among the Bells.mp3"
+        "song": "projects/project2/Among the Bells.mp3",
+        "description": "The second project"
     }
 ]
