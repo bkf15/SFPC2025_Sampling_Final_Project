@@ -1,7 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 20px;
-    background: #fafafa;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0b0b0b;
+    color: #f0c0ff;
+    text-shadow: 0 0 6px #a020a0;
+}
+
+.divheader {
+    background-color: #2a002a;
+    padding: 20px;
+    text-shadow: 0 0 6px #a020a0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(255, 0, 255, 0.2);
+    border: 1px solid #4b004b;
+    color: #f0c0ff;
+    margin-bottom: 40px;
 }
 
 #projects {
@@ -12,18 +26,50 @@ body {
 }
 
 .project-card {
-    background: rgb(200, 136, 237);
+    background-color: #1a0a1a;
+    /* dark purple-black */
+    border: 1px solid #4b004b;
+    /* subtle purple border */
+    border-radius: 12px;
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(255, 0, 255, 0.2);
+    /* neon glow */
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+    max-width: 20vw;
+    box-sizing: border-box;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 0, 255, 0.4);
+}
+
+.project-card h2 {
+    font-size: 1.2rem;
+    color: #ff77ff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 6px #a020a0;
 }
 
 .project-card img {
     width: 100%;
     max-width: 25vw;
     height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #4b004b;
 }
 
 .project-card audio {
     width: 100%;
+    outline: none;
+    border-radius: 5px;
+    background-color: #2a002a;
+}
+
+@media (max-width: 600px) {
+    #projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
