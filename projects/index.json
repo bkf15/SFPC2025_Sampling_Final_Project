@@ -4,5 +4,11 @@
         "title": "Project 1",
         "image": "projects/project1/maxresdefault.jpg",
         "song": "projects/project1/Among the Bells.mp3"
+    },
+    {
+        "id": "project2",
+        "title": "Project 2",
+        "image": "projects/project2/maxresdefault.jpg",
+        "song": "projects/project2/Among the Bells.mp3"
     }
 ]
